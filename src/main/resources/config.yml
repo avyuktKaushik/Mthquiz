@@ -1,0 +1,30 @@
+# ===== MathQuiz config =====
+
+# Seconds between automatic questions
+interval-seconds: 300
+
+# Seconds players have to answer before the question expires
+answer-time-seconds: 30
+
+# Minimum players online for automatic questions to be asked
+min-players: 1
+
+# easy = small numbers, normal = default, hard = big numbers
+difficulty: normal
+
+# Percent of questions that are "Find x" algebra (0-100).
+# The rest are plain arithmetic like: 2 × 5 ÷ 10 + 31
+algebra-chance: 30
+
+# Reward chances are weights (higher = more likely). Set to 0 to disable one.
+rewards:
+  golden-apples:
+    weight: 50
+    amount: 10
+  enchanted-golden-apple:
+    weight: 20
+    amount: 1
+  mystery-box:
+    weight: 30
+    # how many gear pieces are inside
+    items: 3

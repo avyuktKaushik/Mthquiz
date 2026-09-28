@@ -1,0 +1,16 @@
+name: MathQuiz
+version: '${project.version}'
+main: com.example.mathquiz.MathQuizPlugin
+api-version: '1.21'
+author: You
+description: Random math questions in chat - first correct answer wins a reward!
+commands:
+  mathquiz:
+    description: Control the math quiz
+    usage: /mathquiz <start|stop|reload>
+    aliases: [mq]
+    permission: mathquiz.admin
+permissions:
+  mathquiz.admin:
+    description: Allows controlling the math quiz
+    default: op
